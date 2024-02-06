@@ -1,0 +1,72 @@
+<!-- 
+    list of envelop 
+    update Document
+    update recipients
+-->
+
+<html>
+    <head>
+        <title> Demo App For DocuSign in RentSynergy</title>
+        <style>
+            form input{
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            .inner-div{
+                border: 1px solid black;
+                border-radius: 30px;
+                padding: 10px;
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            form{
+                display: grid;
+            }
+
+            .d-none{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <div class="inner-div">        
+                <h1>Want to raise view request on existing envelope?</h1>
+                <a href="/envelopes">List of Existing Envelopes</a>
+            </div>
+            <div class="inner-div">  
+                <h1>Already Having Existing Envelope Id?</h1>
+                <a href="/view_request">Click Here</a>
+            </div>
+            <!-- <div style="display:flex; align-items: center; flex-direction: column;"> -->
+            <div class="inner-div" style="text-align: justify; align-items: center;">
+                <h1>Create New Envelope</h1>
+                <form action="/form" method="post">
+                    <label for="signerName1">Person 1 Name:</label>
+                    <input type="text" id="signerName1" name="signerName1" placeholder="Enter Name" />
+                    <label for="signerEmail1">Person 1 Email:</label>
+                    <input type="text" id="signerEmail1" name="signerEmail1" placeholder="Enter email" />
+                    <label for="signerName2">Person 2 Name:</label>
+                    <input type="text" id="signerName2" name="signerName2" placeholder="Enter Name" />
+                    <label for="signerEmail2">Person 2 Email:</label>
+                    <input type="text" id="signerEmail2" name="signerEmail2" placeholder="Enter email" />
+                    <label for="signerName3">Person 3 Name:</label>
+                    <input type="text" id="signerName3" name="signerName3" placeholder="Enter Name" />
+                    <label for="signerEmail3">Person 3 Email:</label>
+                    <input type="text" id="signerEmail3" name="signerEmail3" placeholder="Enter email" />
+                    <label for="ccName">CC Name:</label>
+                    <input type="text" id="ccName" name="ccName" placeholder="Enter CC Name" />
+                    <label for="ccEmail">CC Email:</label>
+                    <input type="text" id="ccEmail" name="ccEmail" placeholder="Enter CC email" />
+                    <select name="status" id="status">
+                        <option value="created">Draft</option>
+                        <option value="sent">Sent</option>
+                    </select>
+                    <input type="submit" />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

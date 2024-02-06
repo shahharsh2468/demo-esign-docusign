@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title> Demo App For DocuSign in RentSynergy</title>
+        <style>
+            form input, select{
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            form{
+                display: grid;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="/">Home</a>
+        <div style="border-radius: 50px; border: 1px solid black; display:flex; width: fit-content; padding: 15px; flex-direction: column; margin:15% 25% 20% 40%;">
+            <form action="/sender_request" method="post">      
+                <h1>Preview Draft Document : </h1> 
+                <h3> <%= jsonData.subject %> </h3>                
+                <label for="envelopeId">Envelope Id:</label>
+                <input type="text" id="envelopeId" name="envelopeId" placeholder="Enter EnvelopeId" value="<%= jsonData.envelopeId %>" />    
+                <label for="startingView">Starting View:</label>
+                <select name="startingView" id="startingView">
+                    <option value="tagging">Tagging View</option>
+                    <option value="recipient">Recipients & Documents View</option>
+                </select>
+                <label for="showTabPalette">Show Tab Palette:</label>
+                <select name="showTabPalette" id="showTabPalette">
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
+                <input type="submit" />
+            </form>
+        </div>
+    </body>
+</html>
