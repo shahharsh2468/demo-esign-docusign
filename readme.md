@@ -1,7 +1,8 @@
 
 - Do "npm install" to install all dependancy
 - Rename .env.example file to .env file and add your credential of developer docusign account
-- run nodemon app.js or node app.js command to run application
+- run nodemon app.js or node app.js command to run 
+- Refer images folder to see the demo docusign project
 
 ## JWT access token (Refered 2nd YT video for this) Docusign Integration :-
 - Create Developer account at docusign for free: https://go.docusign.com/o/sandbox/?postActivateUrl=https://developers.docusign.com/&_gl=1*1ned63o*_gcl_au*OTkwNTk2NTIyLjE2OTkyNDczOTI.*_ga*NTc1NTkxNzQyLjE2OTkyNDczOTI.*_ga_1TZ7S9D6BQ*MTcwMDE5NjM3NS4yMC4xLjE3MDAxOTY0MDguMjcuMC4w&_ga=2.182935142.1392131612.1700107332-575591742.1699247392
